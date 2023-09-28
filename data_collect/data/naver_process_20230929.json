@@ -1,0 +1,274 @@
+{
+    "20230929": [
+        {
+            "spot_name": "두껍삼 강남직영점",
+            "rating_amt": -1,
+            "review_cnt": 999
+        },
+        {
+            "spot_name": "청담등심",
+            "rating_amt": 4.66,
+            "review_cnt": 395
+        },
+        {
+            "spot_name": "떡도리탕 강남본점",
+            "rating_amt": 4.47,
+            "review_cnt": 999
+        },
+        {
+            "spot_name": "호보식당",
+            "rating_amt": 4.66,
+            "review_cnt": 999
+        },
+        {
+            "spot_name": "옥된장 역삼점",
+            "rating_amt": -1,
+            "review_cnt": 329
+        },
+        {
+            "spot_name": "알부자",
+            "rating_amt": 4.38,
+            "review_cnt": 999
+        },
+        {
+            "spot_name": "다몽집 신논현본점",
+            "rating_amt": 4.69,
+            "review_cnt": 999
+        },
+        {
+            "spot_name": "신동궁감자탕 역삼직영점",
+            "rating_amt": 4.31,
+            "review_cnt": 999
+        },
+        {
+            "spot_name": "강남 곱",
+            "rating_amt": -1,
+            "review_cnt": 999
+        },
+        {
+            "spot_name": "강남진해장",
+            "rating_amt": 4.35,
+            "review_cnt": 999
+        },
+        {
+            "spot_name": "임병주산동칼국수",
+            "rating_amt": 4.35,
+            "review_cnt": 999
+        },
+        {
+            "spot_name": "농민백암순대",
+            "rating_amt": 4.51,
+            "review_cnt": 999
+        },
+        {
+            "spot_name": "무월식탁",
+            "rating_amt": 4.3,
+            "review_cnt": 999
+        },
+        {
+            "spot_name": "유니네 고깃간",
+            "rating_amt": -1,
+            "review_cnt": 999
+        },
+        {
+            "spot_name": "조양관한정식",
+            "rating_amt": 4.6,
+            "review_cnt": 999
+        },
+        {
+            "spot_name": "을밀대 강남점",
+            "rating_amt": 4.31,
+            "review_cnt": 999
+        },
+        {
+            "spot_name": "장인닭갈비 강남점",
+            "rating_amt": 4.29,
+            "review_cnt": 999
+        },
+        {
+            "spot_name": "강남명전",
+            "rating_amt": 4.31,
+            "review_cnt": 999
+        },
+        {
+            "spot_name": "진구곱창",
+            "rating_amt": -1,
+            "review_cnt": 999
+        },
+        {
+            "spot_name": "청간막국수",
+            "rating_amt": -1,
+            "review_cnt": 293
+        },
+        {
+            "spot_name": "더막창스",
+            "rating_amt": 4.75,
+            "review_cnt": 999
+        },
+        {
+            "spot_name": "화기애애",
+            "rating_amt": 4.65,
+            "review_cnt": 999
+        },
+        {
+            "spot_name": "회뜨는사나이 1호점",
+            "rating_amt": 4.25,
+            "review_cnt": 356
+        },
+        {
+            "spot_name": "대진도원참치 강남역점",
+            "rating_amt": -1,
+            "review_cnt": 999
+        },
+        {
+            "spot_name": "육품",
+            "rating_amt": 4.42,
+            "review_cnt": 718
+        },
+        {
+            "spot_name": "봉우이층집",
+            "rating_amt": 4.57,
+            "review_cnt": 999
+        },
+        {
+            "spot_name": "청류벽",
+            "rating_amt": 4.25,
+            "review_cnt": 999
+        },
+        {
+            "spot_name": "봉우화로",
+            "rating_amt": 4.4,
+            "review_cnt": 999
+        },
+        {
+            "spot_name": "뽕족 강남역본점",
+            "rating_amt": 4.53,
+            "review_cnt": 851
+        },
+        {
+            "spot_name": "자매수산",
+            "rating_amt": 4.3,
+            "review_cnt": 809
+        },
+        {
+            "spot_name": "대진도원참치 강남역점",
+            "rating_amt": -1,
+            "review_cnt": 999
+        },
+        {
+            "spot_name": "노랑저고리",
+            "rating_amt": 4.35,
+            "review_cnt": 999
+        },
+        {
+            "spot_name": "시골야채된장",
+            "rating_amt": 4.3,
+            "review_cnt": 999
+        },
+        {
+            "spot_name": "한우부티크 강남점",
+            "rating_amt": -1,
+            "review_cnt": 61
+        },
+        {
+            "spot_name": "백억하누 강남본점",
+            "rating_amt": 4.54,
+            "review_cnt": 999
+        },
+        {
+            "spot_name": "쭈꾸미랩소디 강남점",
+            "rating_amt": -1,
+            "review_cnt": 999
+        },
+        {
+            "spot_name": "60년전통신촌황소곱창 강남역직영점",
+            "rating_amt": 4.6,
+            "review_cnt": 999
+        },
+        {
+            "spot_name": "청계숲양대창",
+            "rating_amt": 4.5,
+            "review_cnt": 999
+        },
+        {
+            "spot_name": "이사공양고기자리 강남본점",
+            "rating_amt": -1,
+            "review_cnt": 128
+        },
+        {
+            "spot_name": "진대감 강남역 교보타워점",
+            "rating_amt": 4.48,
+            "review_cnt": 999
+        },
+        {
+            "spot_name": "이춘복참치&스시 강남점",
+            "rating_amt": 4.29,
+            "review_cnt": 999
+        },
+        {
+            "spot_name": "신도세기 강남역점",
+            "rating_amt": 4.3,
+            "review_cnt": 997
+        },
+        {
+            "spot_name": "동두천솥뚜껑삼겹살 강남역점",
+            "rating_amt": 4.35,
+            "review_cnt": 999
+        },
+        {
+            "spot_name": "떠빱",
+            "rating_amt": 4.79,
+            "review_cnt": 999
+        },
+        {
+            "spot_name": "칸나닭집",
+            "rating_amt": 4.61,
+            "review_cnt": 506
+        },
+        {
+            "spot_name": "두껍삼 강남직영점",
+            "rating_amt": -1,
+            "review_cnt": 999
+        },
+        {
+            "spot_name": "교대이층집 강남역점",
+            "rating_amt": 4.42,
+            "review_cnt": 799
+        },
+        {
+            "spot_name": "돝고기506",
+            "rating_amt": 4.42,
+            "review_cnt": 999
+        },
+        {
+            "spot_name": "고수닭갈비",
+            "rating_amt": 4.51,
+            "review_cnt": 999
+        },
+        {
+            "spot_name": "고깃집열",
+            "rating_amt": 4.37,
+            "review_cnt": 610
+        },
+        {
+            "spot_name": "창고43 강남점",
+            "rating_amt": 4.46,
+            "review_cnt": 999
+        },
+        {
+            "spot_name": "도툼횟집",
+            "rating_amt": 4.43,
+            "review_cnt": 437
+        },
+        {
+            "spot_name": "가가솥밥 강남점",
+            "rating_amt": -1,
+            "review_cnt": 999
+        },
+        {
+            "spot_name": "고기꾼김춘배 강남점",
+            "rating_amt": 4.47,
+            "review_cnt": 999
+        }
+    ]
+}
