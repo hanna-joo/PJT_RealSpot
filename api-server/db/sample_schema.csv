@@ -1,0 +1,8 @@
+CREATE TABLE `naver_spot` (
+  `created_at` date NOT NULL COMMENT '수집일시',
+  `spot_name` varchar(255) NOT NULL COMMENT '업체명',
+  `rating_amt` float DEFAULT NULL COMMENT '별점 (default -1)',
+  `review_cnt` float DEFAULT NULL COMMENT '리뷰 수 (default -1)',
+  PRIMARY KEY (`spot_name`,`created_at`),
+  KEY `idx_created_at` (`created_at`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='네이버 리뷰 정보'
