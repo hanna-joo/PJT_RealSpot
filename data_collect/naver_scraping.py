@@ -16,7 +16,7 @@ import re
 import polars as pl
 
 
-# css 찾을때 까지 최대 num초 대기
+# css 찾을때 까지 최대 sec 초 대기
 def time_wait(sec, selector):
     try:
         wait = WebDriverWait(driver, sec).until(
@@ -41,9 +41,10 @@ def page_down(num):
         body.send_keys(Keys.PAGE_DOWN)
 
 
+today = datetime.now().strftime("%Y%m%d")
+url = 'https://map.naver.com/v5/search'
 options = Options()
 options.add_experimental_option("detach", True)
-url = 'https://map.naver.com/v5/search'
 driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options)
 driver.get(url)
 keyword = '강남역 한식'  # 검색어
@@ -63,20 +64,23 @@ switch_frame('searchIframe')
 page_down(50)
 sleep(3)
 
-# 4. 페이지 소스에서 가게 리스트 추출
+# 4. 페이지 소스 data 변수에 저장
 data = BeautifulSoup(driver.page_source, 'html.parser').select('div.CHC5F')
-columns = [('spot_name', pl.Utf8), ('rating_amt', pl.Float64), ('review_cnt', pl.Int64)]
+driver.close()
+
+# 5. 가게 이름, 평점, 리뷰 수 추출
+columns = [('spot_cd', pl.Utf8), ('spot_nm', pl.Utf8), ('rating_amt', pl.Float64), ('review_cnt', pl.Int64)]
 df = pl.DataFrame({}, schema=columns)
 for i, x in enumerate(data):
-    new = dict()
-    # 가게 이름, 별점, 리뷰 수 추출
-    new['spot_name'] = x.select_one('span.TYaxT').get_text()
+    new = {'spot_cd': f'{today}{str(i+1).zfill(3)}'}
+    # 가게 이름, 평점, 리뷰 수 추출
+    new['spot_nm'] = x.select_one('span.TYaxT').get_text()
     raw = x.select_one('div.MVx6e').get_text() # 오늘 휴무별점4.29리뷰 999+
-    star, review = re.findall(r'별점(\d+\.\d+|\d+)', raw), re.findall(r'리뷰 (\d*)', raw)
-    new['rating_amt'] = float(star[0]) if star else float(-1)
-    new['review_cnt'] = int(review[0]) if review else -1
+    rating_amt, review_cnt = re.findall(r'별점(\d+\.\d+|\d+)', raw), re.findall(r'리뷰 (\d*)', raw)
+    new['rating_amt'] = float(rating_amt[0]) if rating_amt else float(-1)
+    new['review_cnt'] = int(review_cnt[0]) if review_cnt else -1
     df = df.vstack(pl.DataFrame(new))
 
-
-today = datetime.now().strftime("%Y%m%d")
+# 6. csv 형태로 로컬에 저장
 df.write_csv(f'naver_{today}.csv')
+
